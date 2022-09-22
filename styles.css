@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&display=swap');
+
+body {
+	background-attachment: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Lexend Zetta', sans-serif;
+	background-image: url("bgg.jpg");
+	background-size: cover;
+}
+#title1 {
+	text-align: center;
+	letter-spacing: 10px;
+	color: white;
+}
+
+button {
+	font-family: 'Lexend Zetta', sans-serif;
+	background-color: orange;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+.card {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	border: none;
+	border-radius: .5rem;
+	padding: .5rem;
+	max-width: 600px;
+	margin: 0 auto;
+	max-height: 900px;
+	transform: translateX(200%);
+	opacity: 0;
+	transition: 250ms ease-in-out;
+	position: absolute;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: .5rem;
+	gap: 0.25em;
+}
+
+.form-group > label {
+	font-weight: bold;
+	font-size: .8em;
+	color: white;
+}
+
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
+.form-group > input {
+	border: none;
+	border-radius: .25em;
+	font-size: 1rem;
+	padding: 0.25em;
+}
+
+.step-title {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.card.active {
+	position: static;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.multi-step-form {
+	overflow: hidden;
+	position: relative;
+}
+.cbut {
+	text-align: center; 
+	margin-top: 20px;
+}
+.cbut button {
+	margin-left: 0;
+	padding: 10px;
+}
+
+form ,#cam {
+	margin-top: 100px;
+	align-items: center;
+	min-width: 40%;
+	min-height: 70%;
+	padding: 3%;
+	border: 1px solid white;
+}
